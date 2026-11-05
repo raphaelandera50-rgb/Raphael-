@@ -1,0 +1,35 @@
+/* ===== COLORS (edit here) ===== */
+:root{--navy:#14213d;--gold:#f2c14e;--page:#fdf8ec;--ink:#1b2430;--green:#1a7f1a;--lightblue:#add8e6;}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.7;color:var(--ink);background:var(--page)}
+body.hobbies{background:var(--lightblue)}
+body.experience{background:#eaf6ee}
+body.contacts{background:#f3eefc}
+.menu{background:var(--navy);text-align:center;padding:.4rem 0}
+.menu a{display:inline-block;color:#fff;text-decoration:none;font:bold 1rem Arial,sans-serif;padding:.7rem 1.4rem}
+.menu a:hover,.menu a.current{background:var(--gold);color:var(--navy)}
+.namebar{overflow:hidden;background:#fff;border-bottom:4px solid var(--gold);white-space:nowrap}
+.namebar h1{display:inline-block;margin:0;padding:.3rem 0;font:bold 48px Arial,sans-serif;color:var(--navy);animation:ltr 12s linear infinite}
+@keyframes ltr{from{transform:translateX(-100%)}to{transform:translateX(100vw)}}
+@media (prefers-reduced-motion:reduce){.namebar h1{animation:none}}
+main{max-width:860px;margin:0 auto;padding:2rem 1.25rem}
+h2{font-family:Arial,sans-serif;color:var(--navy);margin-top:0}
+.photo{display:block;float:left;width:170px;height:200px;object-fit:cover;border:4px solid var(--gold);margin:0 1.5rem 0 0;background:#cfd8e3}
+hr{clear:both;border:0;border-top:2px solid var(--navy);margin:1.5rem 0}
+main p{margin:0 0 1.4rem}
+table{border-collapse:collapse;width:100%;background:#fff}
+table,th,td{border:1px solid green}
+th{background:lightblue;color:var(--navy);text-align:left;padding:.7rem}
+td{padding:.7rem;vertical-align:top}
+.contact-list{list-style:none;padding:0}
+.contact-list li{margin:.3rem 0}
+form{border:2px solid #1e9be9;background:#fff;padding:1rem 1.2rem;max-width:620px;font-family:Arial,sans-serif;font-size:14px}
+form label{display:block;color:#8a1538;font-weight:bold;margin:.8rem 0 .2rem}
+form input[type=text],form input[type=email]{width:300px;max-width:100%;border:1px solid #c0314f;padding:.35rem}
+form textarea{width:100%;max-width:420px;height:150px;border:1px solid #c0314f;padding:.35rem}
+form .copy{color:#8a1538;font-weight:normal;margin-top:1rem}
+form button{background:#0a9a0a;color:#fff;border:0;font-weight:bold;padding:.4rem .7rem;margin-top:.8rem;cursor:pointer}
+.hobbies h3{font-family:Arial,sans-serif;color:var(--navy)}
+footer{background:#fff;border-top:4px solid var(--gold);text-align:center;padding-bottom:1rem}
+footer .copy-right{color:var(--green);font-weight:bold;font-family:Arial,sans-serif;margin:0}
+@media(max-width:600px){.namebar h1{font-size:36px}.photo{float:none;margin:0 auto 1rem}}
